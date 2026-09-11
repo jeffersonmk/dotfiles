@@ -17,9 +17,3 @@ hl.bind(
     hl.dsp.exec_cmd("cartridges"),
     { description = "Cartridges" }
 )
-
-hl.bind(
-    "CTRL+SUPER+D",
-    hl.dsp.exec_cmd("vesktop"),
-    { description = "Vesktop (Discord Client)" }
-)
