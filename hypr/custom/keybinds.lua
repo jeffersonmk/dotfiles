@@ -1,10 +1,28 @@
 hl.bind("CTRL+SUPER+ALT+Slash", hl.dsp.exec_cmd("xdg-open ~/.config/hypr/custom/keybinds.lua"), {description = "Edit user keybinds"} )
 
-
 hl.bind(
     "CTRL+SUPER+C",
     hl.dsp.exec_cmd("helium-browser"),
     { description = "Helium" }
+)
+
+hl.bind(
+    "CTRL+SUPER+B",
+    hl.dsp.exec_cmd("brave"),
+    { description = "Brave" }
+)
+
+hl.bind(
+    "CTRL+SUPER+L",
+    hl.dsp.exec_cmd("librewolf"),
+    { description = "Librewolf" }
+)
+
+
+hl.bind(
+    "CTRL+SHIFT+A",
+    hl.dsp.exec_cmd("flatpak run buzz.armada.app"),
+    { description = "Armada" }
 )
 
 hl.bind(
@@ -17,12 +35,6 @@ hl.bind(
     "CTRL+SUPER+G",
     hl.dsp.exec_cmd("cartridges"),
     { description = "Cartridges" }
-)
-
-hl.bind(
-    "CTRL+SUPER+B",
-    hl.dsp.exec_cmd("brave"),
-    { description = "Brave" }
 )
 
 -- Super+Shift+T: system info (hardware, usage, temperatures) instead of the removed screen translator
@@ -52,3 +64,4 @@ hl.bind(
     hl.dsp.global("quickshell:webappQuickToggle"),
     { description = "Apps: Duck.ai quick window" }
 )
+
