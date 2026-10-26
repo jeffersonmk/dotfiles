@@ -1,0 +1,38 @@
+{
+  "mode": "dark",
+  "extends": "defaultDark",
+  "stylesheets": ["ember-brown.css"],
+  "colors": {
+    "background": "rgb(21, 14, 11)",
+    "background-alternate": "rgb(16, 10, 8)",
+    "surface": "rgb(36, 23, 18)",
+    "surface-foreground": "rgb(243, 228, 211)",
+    "foreground": "rgb(243, 228, 211)",
+    "foreground-muted": "rgb(196, 165, 141)",
+    "primary": "rgb(224, 106, 44)",
+    "black": "rgb(9, 5, 4)",
+    "white": "rgb(255, 248, 240)",
+    "state-error": "rgb(226, 86, 70)",
+    "state-info": "rgb(236, 150, 82)",
+    "state-success": "rgb(150, 178, 104)",
+    "state-warning": "rgb(234, 178, 72)"
+  },
+  "app": {
+    "overlay-header": "linear-gradient(rgba(21, 14, 11, 0.25) 0%, rgba(21, 14, 11, 0.9) 100%), var(--theme-background-noise)",
+    "overlay-subheader": "linear-gradient(180deg, rgba(224, 106, 44, 0.06) 0%, var(--theme-colors-background) 100%), var(--theme-background-noise)",
+    "scrollbar-size": "10px",
+    "scrollbar-handle-border-radius": "10px",
+    "scrollbar-track-border-radius": "10px",
+    "scrollbar-handle-background": "rgba(224, 106, 44, 0.28)",
+    "scrollbar-handle-hover-background": "rgba(224, 106, 44, 0.5)",
+    "scrollbar-handle-active-background": "rgba(243, 138, 76, 0.7)",
+    "scrollbar-track-background": "transparent",
+    "scrollbar-track-hover-background": "rgba(36, 23, 18, 0.5)",
+    "scrollbar-track-active-background": "rgba(36, 23, 18, 0.5)"
+  },
+  "mantineOverride": {
+    "primaryShade": {
+      "dark": 6
+    }
+  }
+}

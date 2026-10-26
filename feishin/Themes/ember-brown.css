@@ -1,0 +1,159 @@
+/* Ember Brown — folha de estilo complementar (carregada via "stylesheets" no JSON) */
+
+/* ---------- 1. Cor de destaque sempre em brasa ----------
+   Mesmo com "Usar cor de destaque do tema" desligado nas configurações,
+   o tema força a paleta laranja em vez do azul padrão. */
+:root {
+  --ember-0: #fff3eb;
+  --ember-1: #ffe2d0;
+  --ember-2: #fdc4a1;
+  --ember-3: #f9a46f;
+  --ember-4: #f38a4c;
+  --ember-5: #ec7a3a;
+  --ember-6: #e06a2c;
+  --ember-7: #c4561f;
+  --ember-8: #a84718;
+  --ember-9: #8a3a14;
+  --ember-glow: rgba(224, 106, 44, 0.35);
+  --ember-tint: rgba(224, 106, 44, 0.12);
+  --ember-tint-strong: rgba(224, 106, 44, 0.2);
+
+  --theme-colors-primary: var(--ember-6) !important;
+  --theme-colors-border: rgba(243, 196, 160, 0.08) !important;
+  --theme-colors-primary-contrast: #1a0e09 !important;
+
+  --mantine-color-primary-0: var(--ember-0) !important;
+  --mantine-color-primary-1: var(--ember-1) !important;
+  --mantine-color-primary-2: var(--ember-2) !important;
+  --mantine-color-primary-3: var(--ember-3) !important;
+  --mantine-color-primary-4: var(--ember-4) !important;
+  --mantine-color-primary-5: var(--ember-5) !important;
+  --mantine-color-primary-6: var(--ember-6) !important;
+  --mantine-color-primary-7: var(--ember-7) !important;
+  --mantine-color-primary-8: var(--ember-8) !important;
+  --mantine-color-primary-9: var(--ember-9) !important;
+  --mantine-color-primary-filled: var(--ember-6) !important;
+  --mantine-color-primary-filled-hover: var(--ember-7) !important;
+  --mantine-color-primary-light: var(--ember-tint) !important;
+  --mantine-color-primary-light-hover: var(--ember-tint-strong) !important;
+  --mantine-color-primary-light-color: var(--ember-3) !important;
+  --mantine-color-primary-outline: var(--ember-4) !important;
+  --mantine-color-primary-outline-hover: var(--ember-tint) !important;
+  --mantine-color-primary-text: var(--ember-4) !important;
+  --mantine-primary-color-contrast: #1a0e09 !important;
+  --mantine-color-anchor: var(--ember-4) !important;
+}
+
+::selection {
+  color: #1a0e09;
+  background: var(--ember-4);
+}
+
+/* ---------- 2. Barra lateral ---------- */
+.fs-left-sidebar-module-container {
+  border-right: 1px solid var(--theme-colors-border);
+}
+
+.fs-sidebar-item-module-link {
+  border-radius: 8px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.fs-sidebar-item-module-link:hover {
+  background-color: rgba(243, 196, 160, 0.05);
+}
+
+.fs-sidebar-item-module-link.fs-sidebar-item-module-active {
+  color: var(--ember-4);
+  background: linear-gradient(90deg, var(--ember-tint-strong), transparent 85%) border-box no-repeat;
+  box-shadow: inset 3px 0 0 var(--ember-6);
+}
+
+.fs-sidebar-collection-list-module-row-active {
+  background: linear-gradient(90deg, var(--ember-tint-strong), transparent 85%) border-box no-repeat;
+  box-shadow: inset 3px 0 0 var(--ember-6);
+}
+
+/* ---------- 3. Barra do player ---------- */
+.fs-player-bar-module-container {
+  background:
+    linear-gradient(180deg, rgba(224, 106, 44, 0.05), transparent 60%),
+    var(--theme-colors-background-alternate) !important;
+  border-top: 1px solid rgba(224, 106, 44, 0.18);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* barra de progresso: brasa com leve brilho */
+.fs-playerbar-slider-module-bar {
+  background: linear-gradient(90deg, var(--ember-7), var(--ember-4));
+}
+
+.fs-playerbar-slider-module-root:hover .fs-playerbar-slider-module-bar {
+  background: linear-gradient(90deg, var(--ember-6), var(--ember-3));
+  box-shadow: 0 0 8px var(--ember-glow);
+}
+
+.fs-playerbar-slider-module-thumb {
+  background-color: var(--ember-2);
+  border-color: var(--ember-6);
+}
+
+/* botão principal de play: cor creme quente em vez de branco puro */
+.fs-play-button-module-play-button {
+  background-color: #f6e6d3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.fs-play-button-module-play-button:hover {
+  box-shadow: 0 0 0 3px var(--ember-tint-strong), 0 4px 16px var(--ember-glow);
+}
+
+/* ---------- 4. Cards e listas ---------- */
+.fs-item-card-module-image-container {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.fs-item-card-module-container:hover .fs-item-card-module-image-container {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(224, 106, 44, 0.35);
+}
+
+.fs-item-card-module-selected .fs-item-card-module-image-container {
+  box-shadow: 0 0 0 2px var(--ember-6);
+}
+
+[data-mantine-color-scheme='dark']
+  .fs-item-table-list-column-module-container.fs-item-table-list-column-module-data-row.fs-item-table-list-column-module-row-selected {
+  background-color: var(--ember-tint-strong);
+  box-shadow: 1px 0 var(--ember-tint-strong), -1px 0 var(--ember-tint-strong);
+}
+
+.fs-item-detail-list-module-track-row-selected {
+  background-color: var(--ember-tint-strong) !important;
+}
+
+/* ---------- 5. Menus, modais e popovers ---------- */
+.fs-modal-module-content,
+.fs-popover-module-dropdown,
+.fs-select-module-dropdown,
+.fs-context-menu-module-content,
+.fs-dropdown-menu-module-menu-dropdown,
+.fs-hover-card-module-dropdown {
+  border: 1px solid rgba(243, 196, 160, 0.1) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+.mantine-Modal-overlay {
+  backdrop-filter: blur(3px);
+}
+
+/* abas ativas com sublinhado em brasa */
+.fs-tabs-module-tab[data-active] {
+  color: var(--ember-3);
+}
+
+/* ---------- 6. Campos de texto ---------- */
+.mantine-Input-input:focus,
+.mantine-Input-input:focus-within {
+  border-color: var(--ember-6) !important;
+  box-shadow: 0 0 0 2px var(--ember-tint-strong);
+}
