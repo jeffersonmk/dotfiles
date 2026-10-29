@@ -7,9 +7,9 @@ hl.bind(
 )
 
 hl.bind(
-    "CTRL+SUPER+B",
-    hl.dsp.exec_cmd("brave"),
-    { description = "Brave" }
+    "CTRL+SUPER+H",
+    hl.dsp.exec_cmd("hermes-desktop"),
+    { description = "Hermes" }
 )
 
 hl.bind(
